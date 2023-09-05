@@ -12,7 +12,7 @@ let tableau1: (number | boolean)[] = [];
 interface Player {
   id: number,
   name: string,
-  jersey?: number
+  jersey?: number //Pas obligatoire
 } 
 
 const zidane:Player = {
@@ -38,7 +38,7 @@ const sayMyName = (name?: string) => {
   console.log(`Bonjour ${name}`);
 };
 
-const ageDuCapitaine = (age: number | string, size?:number):void => {
+const ageDuCapitaine = (age: number | string, size?:number):void => { // Ne retoourne pas de string
   if (size) {
     console.log(`La taille du capitaine est de ${size}cm et il est agé de : ${age} ans`) 
   } else {
@@ -65,5 +65,4 @@ const user1:User = {
 
 if (user1.role === Role.ADMIN) {
   console.log('connexion spéciale');
-  
 }

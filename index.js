@@ -1,4 +1,3 @@
-"use strict";
 // variables
 var num1 = 24;
 var num2;
@@ -22,14 +21,14 @@ var Singer = /** @class */ (function () {
 }());
 // Les fonctions
 var sayMyName = function (name) {
-    console.log("Bonjour " + name);
+    console.log("Bonjour ".concat(name));
 };
 var ageDuCapitaine = function (age, size) {
     if (size) {
-        console.log("La taille du capitaine est de " + size + "cm et il est ag\u00E9 de : " + age + " ans");
+        // console.log(`La taille du capitaine est de ${size}cm et il est agé de : ${age} ans`) 
     }
     else {
-        console.log("Le capitaine est ag\u00E9 de : " + age + " ans");
+        // console.log(`Le capitaine est agé de : ${age} ans`);
     }
 };
 ageDuCapitaine(16, 185);
@@ -46,5 +45,5 @@ var user1 = {
     role: Role.ADMIN
 };
 if (user1.role === Role.ADMIN) {
-    console.log('connexion spéciale');
+    // console.log('connexion spéciale');
 }
